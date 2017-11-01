@@ -1,5 +1,9 @@
-#include <iostream>
-#include <unistd.h>
+#ifndef __unix__
+    #include <iostream>
+    #include <unistd.h>
+#else
+    #include <iostream>
+#endif
 
 int main(int argc, const char * argv[])
 {
